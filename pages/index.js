@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Rikai from '../components/rikai'
+import RikaiButton from '../components/rikai_button'
 
 export default function Home() {
   return (
@@ -10,10 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <button className={styles.rikai_button}>理解</button>
-        <div className={styles.rikai}>
-          Next.js完全に理解した！
-        </div>
+        <Rikai />
       </main>
     </div>
   )
